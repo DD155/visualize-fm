@@ -9,6 +9,10 @@ export const Container = styled.div`
     position: absolute;
 
     h1 {
-        color: white;
+        color: ${({theme}) => theme.colors.accentColor};
+    }
+
+    h1 > span {
+        color: ${({theme}) => theme.colors.mainColor};
     }
 `
